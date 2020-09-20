@@ -1,0 +1,29 @@
+#include<bits/stdc++.h>
+#define pb push_back
+#define FORI(i, a, b) for(short int i=a; i<b; ++i)
+using namespace std;
+
+int main() {
+
+	// #ifndef ONLINE_JUDGE
+	// freopen("input.txt", "r", stdin);
+	// freopen("output.txt", "w", stdout);
+	// #endif
+
+	short int q, n;
+	long int x;
+	long long int sum;
+	cin>>q;
+	while(q--) {
+		cin>>n;
+		sum=0;
+		FORI(i, 0, n) {
+			cin>>x;
+			sum+=x;
+		}
+		x = ceil((1.0*sum)/(1.0*n));
+		cout<<x<<"\n";
+	}
+
+	return 0;
+}
