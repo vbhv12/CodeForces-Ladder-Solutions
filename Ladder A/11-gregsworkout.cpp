@@ -1,3 +1,5 @@
+//Problem refer:
+//https://codeforces.com/contest/255/problem/A
 #include<iostream>
 using namespace std;
 int main() {
@@ -6,7 +8,7 @@ int main() {
 //	int arr[n];
 	for(int i=0; i<n; ++i) {
 		cin>>x;
-		if(i%3==0) chest+=x;
+		if(i%3==0) chest+=x;  //checking divisibility by 3
 		else if((i-1)%3==0) biceps+=x;
 		else if((i-2)%3==0) back+=x;
 	}
