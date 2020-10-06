@@ -11,12 +11,13 @@ int main() {
 	cin>>n>>k;
 	unsigned long long int arr[n];
 	unsigned long long int count;
+	//taking values from user.
 	for(int i=0; i<n; ++i) cin>>arr[i];
 
 	for(int i=0; i<n; ++i) {
 		count=0;
 		while(arr[i]>0) {
-
+			//Checking if digits are 4 or 7
 			if(arr[i]%10 == 4 || arr[i]%10 == 7) {
 				count++; 
 			}
